@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { IoSearch } from "react-icons/io5";
+import { FaBagShopping } from "react-icons/fa6";
 import Logo from '../images/logo.png';
 import '../styles/Header.css';
 
@@ -11,13 +12,13 @@ function Header () {
   return (
     <div className="header">
       <div className="topHeader">
-        <p onClick={(e) => { e.preventDefault(); setSearch(!search); }}>O</p>
+        <IoSearch onClick={(e) => { e.preventDefault(); setSearch(!search); }}/>
         <div className="logoElements">
           <img className="logoImg" src={Logo} alt="losangos trançados"/>
           <h1 className="logo">CORAL</h1>
           <img className="logoImg" src={Logo} alt="losangos trançados"/>
         </div>
-          <Link to="/cart" className="cart-link"> Cart</Link>
+          <Link to="/cart" className="cart-link"><FaBagShopping className="iconCart"/>Cart</Link>
       </div>
       {search ? (
         <input

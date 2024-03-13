@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-height: 679px;
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -43,4 +44,114 @@ text-align: justified;
 
 .details {
   padding-left: 50px;
+}
+
+.detailButton {
+  background-color: #FF6F61;
+  border: #FF6F61;
+  color: azure;
+  font-family: Roboto;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+/* Para telas pequena / laptops */
+@media only screen and (max-width: 1024px)
+{
+  .productDetails {
+    min-height: 1260px;
+  }
+}
+
+/* Para telas pequena / laptops */
+@media only screen and (max-width: 950px)
+{
+  .productDetails {
+    min-height: 1266px;
+  }
+}
+
+@media only screen and (max-width: 860px)
+{
+  .productDetails {
+    min-height: 1182px;
+  }
+}
+
+/* Para Tablet */
+@media only screen and (max-width: 768px)
+{
+  .productDetails {
+    min-height: 930px;
+  }
+}
+
+/* Para mobile */
+@media only screen and (max-width: 600px)
+{
+  .productDetails {
+    min-height: 640px;
+  }
+}
+
+/* Para mobile */
+@media only screen and (max-width: 450px)
+{
+  .productDetails {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 855px;
+  }
+
+  .detailImg {
+    height: 85%;
+    width: 85%;
+  }
+
+  .detailButton {
+    font-size: 19px;
+  }
+
+  .details {
+    padding-left: 0px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 420px)
+{
+  .productDetails {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 800px;
+  }
+
+  .detailImg {
+    height: 85%;
+    width: 85%;
+  }
+
+  .detailButton {
+    font-size: 19px;
+  }
+
+  .details {
+    padding-left: 0px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 300px)
+{
+  .productDetails {
+    min-height: 850px;
+  }
 }

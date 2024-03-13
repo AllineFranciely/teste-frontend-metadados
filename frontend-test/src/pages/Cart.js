@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
+import { PiTrashThin } from "react-icons/pi";
 import '../styles/Cart.css';
 
 function Cart() {
@@ -61,7 +61,7 @@ function Cart() {
                       <button onClick={() => handleIncrement(item.id)}>+</button>
                     </div>
                     <p className="productsCartTotal">R${item.price * item.quantity}</p>
-                    <button onClick={() => handleRemove(item.id)}></button>
+                    <button className="deleteButtonCartItem" onClick={() => handleRemove(item.id)}><PiTrashThin /></button>
             </div>
           ))}
           <div className="priceTotalCart">

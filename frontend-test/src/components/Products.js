@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Loading from './Loading.js';
 import '../styles/Products.css';
 
 function Products() {
@@ -8,18 +7,7 @@ function Products() {
   const [categories, setCategories] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState([]);
-  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const waitAndSetLoading = () => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-    };
-
-    waitAndSetLoading();
-  }, []);
 
   useEffect(() => {
     fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=8')
@@ -76,7 +64,6 @@ useEffect(() => {
 }, [selectedProduct]);
 
   return (
-    !loading ? (
     <div>
        <div>
         <nav className="navbar">
@@ -103,7 +90,6 @@ useEffect(() => {
       ))}
     </div>
     </div>
-    ) : ( <Loading /> )
   );
 }
 

@@ -1,5 +1,6 @@
 .cart {
   background-color: white;
+  min-height: 595px;
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -80,6 +81,10 @@
 
 @media only screen and (max-width: 1280px)
 {
+  .cart {
+    min-height: 680px;
+  }
+
   .productCartImg {
     height: 30%;
     margin-right: 5px;
@@ -102,6 +107,10 @@
 /* Para telas pequena / laptops */
 @media only screen and (max-width: 1024px)
 {
+  .cart {
+    min-height: 1257px;
+  }
+
   .productCartImg {
     height: 30%;
     margin-right: 5px;
@@ -157,16 +166,60 @@
 /* Para mobile */
 @media only screen and (max-width: 420px)
 {
+  .cart {
+    min-height: 800px;
+  }
+
   .cartItems {
     align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .productCartpresentation {
     flex-direction: column;
   }
 
   .productCartImg {
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    margin-top: 15px;
+    width: 50%;
+  }
+
+  .productCartName {
+    font-size: larger;
+    margin-top: 15px;
+  }
+
+  .productCartPrice {
+    margin-top: 15px;
+  }
+
+  .productCartQuantity {
+    font-size: larger;
+    margin-top: 15px;
+  }
+
+  .productsCartTotal {
+    margin-top: 15px;
+  }
+
+  .deleteButtonCartItem {
+    margin-top: 15px;
+  }
+
+  .priceTotalCart {
+    font-size: larger;
+    margin-top: 20px;
   }
 }
+
+@media only screen and (max-width: 450px)
+{
+  .cart {
+    min-height: 860px;
+  }
+}
+
 
 @media only screen and (max-width: 300px)
 {

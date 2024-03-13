@@ -1,14 +1,13 @@
 .footer {
   background-color:#1E2832;
-  flex-shrink: 0;
 }
 
 .infos {
-color: #FFFFFF;
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0px;
-text-align: center;
+  color: #FFFFFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
 }

@@ -19,6 +19,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .product {
