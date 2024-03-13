@@ -1,0 +1,46 @@
+.productDetails {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.detailImg {
+  height: 35%;
+  width: 35%;
+}
+
+.detailTitle {
+  font-family: Roboto;
+  font-size: 37px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.detailPrice {
+font-family: Roboto;
+font-size: 26px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+margin-bottom: 20px;
+margin-top: 10px;
+text-align: justified;
+}
+
+.detailDescription {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: justified;
+}
+
+.details {
+  padding-left: 50px;
+}
