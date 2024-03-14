@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";
 import { FaBagShopping } from "react-icons/fa6";
@@ -8,6 +8,10 @@ import '../styles/Header.css';
 function Header () {
   const [filterByName, setFilterByName] = useState('');
   const [search, setSearch] = useState(false);
+
+  useEffect(() => {
+    console.log(filterByName)
+  }, []);
 
   return (
     <div className="header">
