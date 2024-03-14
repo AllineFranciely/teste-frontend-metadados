@@ -76,15 +76,15 @@ useEffect(() => {
       </div>
       <div className="products">
       {products.map(product => (
-        <div key={product.id} className="product">
+        <div key={product.id} className="product" data-test-id="Product">
           <div className="productInit">
-            <img className="productImage" src={product.images[0]} alt={product.title} />
+            <img className="productImage" src={product.images[0]} alt={product.title} data-test-id="ImgProduct"/>
             <button onClick={() => {addToCart(product); }} className="productBuy">Comprar</button>
           </div>
-          <h2 onClick={() => {selectProductForDetails(product); }} className="productName">{product.title}</h2>
+          <h2 onClick={() => {selectProductForDetails(product); }} className="productName" data-test-id="TitleProduct">{product.title}</h2>
           <div className="productInfos">
-            <p className="productCategory">{product.category.name}</p>
-            <p>${product.price}</p>
+            <p className="productCategory" data-test-id="ProductCategory">{product.category.name}</p>
+            <p data-test-id="ProductPrice">${product.price}</p>
           </div>
         </div>
       ))}

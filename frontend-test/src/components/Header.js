@@ -22,7 +22,7 @@ function Header () {
           <h1 className="logo">CORAL</h1>
           <img className="logoImg" src={Logo} alt="losangos trançados"/>
         </div>
-          <Link to="/cart" className="cart-link"><FaBagShopping className="iconCart"/>Cart</Link>
+          <Link to="/cart" className="cart-link" data-test-id="cartButton"><FaBagShopping className="iconCart"/>Cart</Link>
       </div>
       {search ? (
         <input
